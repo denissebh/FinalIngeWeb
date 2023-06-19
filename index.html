@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="disSolicitud.css">
+    <script src="pagSolicitudFormulario.js"></script>
+</head>
+
+<body>
+    <div class="title">
+
+        <h1>¡SOLICITUD DE ENVIO DE DATOS PERSONALES!</h1>
+     
+
+    </div>
+    <form action="registrar.php" method="POST" id="form">
+        <div class="form1">
+            <div class="container">
+                <!--°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°-->
+                <div>
+                    <label for="">Nombre</label>
+                    <br>
+                    <input type="text" placeholder="Ingrese su nombre con mayusculas" name="name" id="name"
+                        pattern="[A-Za-z]{1,15}" required>
+                </div>
+                <!--°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°-->
+                <div>
+                    <label for="">Apellido Paterno</label>
+                    <br>
+                    <input type="text" placeholder="Ingrese su apellido paterno con mayusculas" name="ApellidoP"
+                        id="ApellidoP" pattern="[A-Za-z]{1,15}" required>
+                </div>
+                <!--°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°-->
+                <div>
+                    <label for="">Apellido Materno</label>
+                    <br>
+                    <input type="text" placeholder="Ingrese su apellido materno con mayusculas" name="ApellidoM"
+                        id="ApellidoM" pattern="[A-Za-z]{1,15}" required>
+                </div>
+                <!--°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°-->
+                <div>
+                    <label class="block-tertiary">Escribe tu CURP
+                        <br>
+                        <input type="text" name="curp" id="curp" placeholder="CURP = 18 caracteres" required
+                            pattern="([A-Z]{4}([0-9]{2})(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])[HM](AS|BC|BS|CC|CL|CM|CS|CH|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)[A-Z]{3}[0-9A-Z]\d)"
+                            maxlength="18" /></label>
+
+                </div>
+                <!--°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°-->
+                <div>
+                    <label for="">Correo electronico</label>
+                    <br>
+                    <input type="email" placeholder="Ingrese su correo electronico" name="email" id="email" required>
+                </div>
+                <!--°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°-->
+                <div>
+                    <label for="">Contraseña</label>
+                    <br>
+                    <input type="password" placeholder="Tamaño de 8 caracteres con al menos un numero y [A-Z,a-z]"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" maxlength="8" name="password" id="password"
+                        required>
+                </div>
+                <!--°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°-->
+                <div>
+                    <label for="Celular">Telefono Particular</label>
+                    <br>
+                    <input type="phone" name="phone"
+                        placeholder="Ingrese su numero telofonico solo ingrese los 10 digitos" id="phone"
+                        pattern="[0-9]{1,10}" maxlength="10" minlength="10" required>
+                </div>
+
+                <!--°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°-->
+
+                <div>
+                    <input type="file" id="archivoInput" class="col-md-offset-4 col-md-4" onchange="return validarExt()"
+                        required />
+                    <br><br>
+                    <div class="container-Archivo" id="visorArchivo">
+                        <!--Aqui se desplegará el fichero-->
+                    </div>
+                </div>
+
+                <!--°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°-->
+
+
+
+                <div class="boton" class="container">
+                    <!--<a href="pagMostrarSolic.html" type="submit" class="btn" onclick="capturaContraseña()" >ENVIAR</a>-->
+                    <button type="submit" class="btn" value="submit" name="submit">Enviar</button>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class="container3" style="background-color:#f1f1f1">
+            <a href="pagInicioSesion.html" class="en">Iniciar sesion</a>
+
+
+        </div>
+
+
+    </form>
+
+
+    <footer>
+        <div class="container3" style="background-color:#f1f1f1">
+            <h3>Contactanos</h3>
+            <br>
+            <p>Nuestro telefono</p>
+            <a href="tel:5566778899">5566778899</a> <br>
+            <p>Redes Sociales</p>
+            <a href="https://www.upiita.ipn.mx/"><img src="./pictures/url_logo_ipn_upiita.png" alt=""> </a>
+            <a href="https://www.ipn.mx/""><img  src=" ./pictures/url_logo_ipn.png" alt=""></a>
+            <a href="https://www.facebook.com/upiitaipnoficial""><img  src=" ./pictures/face_logo.jpg" alt=""></a>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

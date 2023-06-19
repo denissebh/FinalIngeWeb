@@ -1,0 +1,62 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid #800000;
+}
+
+h1 {
+    color: #800000;
+}
+
+p {
+    color: #333333;
+}
+
+a {
+    color: #800000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container2 {
+max-width: auto;
+margin: 0 auto;
+padding: 40px;
+border: 5px solid;
+font-size: 14px; /* Modifica el tamaño de letra a 24 píxeles */
+font-family: Arial, sans-serif; /* Modifica el tipo de letra a Arial o una fuente sans-serif */
+animation: border-color-animation 3s infinite alternate;
+text-align: center;
+
+}
+@keyframes border-color-animation {
+0% {
+border-color: #ff9ec2;
+}
+50% {
+border-color: #a43f65;
+}
+100% {
+border-color: #691933;
+}
+
+
+
+} 
+footer img{
+    width: 60px;
+    height: 60px;
+  }
