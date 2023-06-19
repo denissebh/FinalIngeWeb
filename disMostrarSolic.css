@@ -1,6 +1,8 @@
 /*
 -Sánchez Valdivia Balam: Diseño de la pagina de animaciones y estetica junto con su respectivo css, enlazamiento de paginas para su funcionalidad
                          independiente al navegador (creacion de la mayoria de los documentos html y css).
+-Martinez Anaya Marco Antonio : Creaccion de los logos de la pagina y creacion de uno unico, modificacion del texto del container 3 
+y respaldo del .css
 */
 
 body {
@@ -51,3 +53,10 @@ body {
     text-align: right;
     
   }
+  
+  .container3 a  /*Modificacion del texto del container cerrar seccion*/ {
+    margin: 10px 0;
+    font-size: 0.79em;
+    color: #78172D;
+    text-decoration: solid;
+}
