@@ -1,5 +1,5 @@
 /*
--Gaytan Diego Edgar David: Creacion del archivo
+-Gaytan Diego Edgar David: Creacion del archivo y funciones
 */
 function validarExt()
 {
