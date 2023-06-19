@@ -1,3 +1,6 @@
+/*
+-Gaytan Diego Edgar David : Creacion Archivo para los administradores 
+*/
 let Admministrador = [
     {
         nombre: "Denisse",
