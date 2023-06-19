@@ -1,4 +1,6 @@
-
+/*
+-Gaytan Diego Edgar David: Creacion del archivo
+*/
 function validarExt()
 {
     var archivoInput = document.getElementById('archivoInput');
