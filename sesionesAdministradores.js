@@ -1,5 +1,5 @@
 /*
--Gaytan Diego Edgar David : Creacion Archivo 
+-Gaytan Diego Edgar David : Creacion Archivo junto con variables y funciones
 */
 let Admministrador = [
     {
