@@ -1,3 +1,7 @@
+<!--
+-Bravo Amescua Emiliano: implemetación para mostrar los datos almacenados en la base
+-->
+
 <?php
 
 try {

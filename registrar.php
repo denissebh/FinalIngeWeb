@@ -1,3 +1,7 @@
+<!--
+-Bravo Amescua Emiliano: Implemetación de guardado de datos en la base de datos
+-->
+
 <?php
 if (isset($_POST['submit'])) {
     if (isset($_POST['name']) && isset($_POST['ApellidoP']) && isset($_POST['ApellidoM']) && isset($_POST['curp']) && isset($_POST['password']) && isset($_POST['email']) && isset($_POST['phone'])) {

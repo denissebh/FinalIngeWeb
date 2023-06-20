@@ -1,3 +1,7 @@
+<!--
+-Bravo Amescua Emiliano: Comparación de datos datos para el inicio de sesión
+-->
+
 <?php
 // Datos de conexión a la base de datos
 $host = 'localhost';

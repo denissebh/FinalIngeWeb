@@ -1,3 +1,6 @@
+/*
+-Bravo Amescua Emiliano: implemetación datos almacenados en la base
+*/
 
 fetch('listar.php')
 .then(res => res.json())

@@ -1,3 +1,7 @@
+<!--
+-Bravo Amescua Emliano: Implemetación para mostrar los datos almacenados en la base
+-->
+
 <?php
 // Establecer los detalles de conexión a la base de datos
 $host = 'localhost';

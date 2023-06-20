@@ -1,3 +1,7 @@
+<!--
+-Bravo Amescua Emiliano: Comparación de datos datos para la recuperación de contraseña
+-->
+
 <?php
 // Datos de conexión a la base de datos
 $host = 'localhost';
